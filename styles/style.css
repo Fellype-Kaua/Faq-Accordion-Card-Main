@@ -1,0 +1,102 @@
+* {
+  font-size: 62.5%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rebeccapurple;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100dvh;
+  width: 100dvw;
+}
+body main {
+  background-color: #fff;
+  border-radius: 1rem;
+  width: 92%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 3rem;
+}
+body main #mobileImg {
+  margin: -48% auto 2rem;
+  display: block;
+  width: 80%;
+  filter: drop-shadow(0px 3rem 1px rgba(0, 0, 0, 0.1));
+}
+body main h1 {
+  font-size: 3rem;
+}
+body main section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+body main section div {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+body main section div .main-subtitles {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+}
+body main section div .main-subtitles img {
+  animation: rotateDown 1s forwards;
+}
+body main section div .main-subtitles .rotate {
+  animation: rotateUp 1s forwards;
+}
+body main section div .main-subtitles_on {
+  color: black;
+}
+body main section div .main-paragraph {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  display: none;
+  animation: fade 1s ease-in-out;
+}
+body main section div .main-paragraph_on {
+  display: inline-block;
+  font-weight: 900;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes rotateUp {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+@keyframes rotateDown {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}/*# sourceMappingURL=style.css.map */
